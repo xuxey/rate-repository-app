@@ -15,7 +15,6 @@ const Main = () => {
   return (
     <View style={styles.container}>
       <AppBar/>
-      <Text>Rate Repository Application hmm</Text>
       <RepositoryList/>
     </View>
   );
