@@ -30,9 +30,11 @@ const styles = StyleSheet.create({
     padding: 5,
     marginTop: 5,
     marginLeft: 8,
+    alignSelf: 'flex-start',
     color: 'white',
     backgroundColor: theme.colors.primary,
     borderRadius: 5,
+    textAlign: 'center',
   },
   repoStatistic: {
     margin: 10,
@@ -60,19 +62,19 @@ const RepositoryItem = ({ repo }) => {
       <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
         <View style={styles.repoStatistic}>
           <Text style={styles.repoStatNumber}>{repo.stargazersCount}</Text>
-          <Text>Stars</Text>
+          <Text style={{textAlign: 'center'}}>Stars</Text>
         </View>
         <View style={styles.repoStatistic}>
           <Text style={styles.repoStatNumber}>{repo.forksCount}</Text>
-          <Text>Forks</Text>
+          <Text style={{textAlign: 'center'}}>Forks</Text>
         </View>
         <View style={styles.repoStatistic}>
           <Text style={styles.repoStatNumber}>{repo.reviewCount}</Text>
-          <Text>Reviews</Text>
+          <Text style={{textAlign: 'center'}}>Reviews</Text>
         </View>
         <View style={styles.repoStatistic}>
           <Text style={styles.repoStatNumber}>{repo.ratingAverage}</Text>
-          <Text>Rating</Text>
+          <Text style={{textAlign: 'center'}}>Rating</Text>
         </View>
       </View>
     </View>
