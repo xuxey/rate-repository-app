@@ -78,7 +78,6 @@ const RepositoryItem = ({ repo }) => {
         </View>
       </View>
     </View>
-
   );
 };
 
